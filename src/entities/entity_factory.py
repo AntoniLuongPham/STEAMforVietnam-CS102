@@ -11,12 +11,12 @@ from config import (
     ShadowConfig,
     TrampolineConfig,
 )
-# <-- COT MOC 4 -->
-# from config import PlayerBulletConfig
+
+from config import PlayerBulletConfig
 from entities.base_entity import BaseEntity
 
-# <-- COT MOC 4 -->
-# from entities.bullet import Bullet 
+
+from entities.bullet import Bullet
 from entities.dialogue_box import DialogueBox
 from entities.friendly_npc import FriendlyNpc
 from entities.player import Player
@@ -60,20 +60,20 @@ class EntityFactory:
                 sprite_path=PlayerInventoryConfig.SPRITE_PATH,
                 scale=PlayerInventoryConfig.SCALE,
             )
-        # <-- COT MOC 4 -->
-        # elif entity_type == EntityType.PLAYER_BULLET:
-        #     return Bullet(
-        #         entity_type=entity_type,
-        #         ttl_ms=PlayerBulletConfig.TTL_MS,
-        #         x=x,
-        #         y=y,
-        #         init_dy=PlayerBulletConfig.INIT_DY,
-        #         sprite_path=PlayerBulletConfig.SPRITE_PATH,
-        #         scale=PlayerBulletConfig.SCALE,
-        #         gravity=PlayerBulletConfig.GRAVITY,
-        #         speed=PlayerBulletConfig.SPEED,
-        #         damage=PlayerBulletConfig.DAMAGE,
-        #     )
+
+        elif entity_type == EntityType.PLAYER_BULLET:
+            return Bullet(
+                entity_type=entity_type,
+                ttl_ms=PlayerBulletConfig.TTL_MS,
+                x=x,
+                y=y,
+                init_dy=PlayerBulletConfig.INIT_DY,
+                sprite_path=PlayerBulletConfig.SPRITE_PATH,
+                scale=PlayerBulletConfig.SCALE,
+                gravity=PlayerBulletConfig.GRAVITY,
+                speed=PlayerBulletConfig.SPEED,
+                damage=PlayerBulletConfig.DAMAGE,
+            )
         elif entity_type == EntityType.SHADOW:
             return Shadow(
                 entity_type=entity_type,
