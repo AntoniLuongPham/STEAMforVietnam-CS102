@@ -111,7 +111,7 @@ class PlayerInventoryConfig:
 
 class PlayerBulletConfig:
     SPRITE_PATH: Path = ASSET_DIR / "items" / "player_bullet.png"
-    SCALE: float = 0.7
+    SCALE: float = 0.4
     SPEED: int = 35
     GRAVITY: int = 2
     DAMAGE: int = 10
@@ -132,14 +132,14 @@ class ShadowConfig:
 
 
 class ShadowBossConfig:
-    SPRITE_PATH: Path = ASSET_DIR / "npcs" / "shadow"
-    SCALE: float = 0.6
+    SPRITE_PATH: Path = ASSET_DIR / "npcs" / "shadowboss"
+    SCALE: float = 1.6
     ANIMATION_INTERVAL_MS: int = 200
-    SPEED: int = 1
-    DAMAGE: int = 1
-    INITIAL_HP: int = 100
+    SPEED: int = 8
+    DAMAGE: int = 3
+    INITIAL_HP: int = 300
 
-    ANGRY_INTERVAL_MS: int = 7000
+    ANGRY_INTERVAL_MS: int = 2000
     ANGRY_DURATION_MS: int = 2000
 
     HURT_DURATION_MS: int = 500
@@ -147,8 +147,8 @@ class ShadowBossConfig:
 
 class ShadowBulletConfig:
     SPRITE_PATH: Path = ASSET_DIR / "items" / "shadow_bullet.png"
-    SCALE: float = 0.05
-    SPEED: int = 5
+    SCALE: float = 0.4
+    SPEED: int = 6
     GRAVITY: int = 0.3
     DAMAGE: int = 1
 
@@ -160,7 +160,7 @@ class ShadowBulletConfig:
 
 
 class EndingBurgerConfig:
-    SPRITE_PATH: Path = ASSET_DIR / "items" / "player_bullet.png"
+    SPRITE_PATH: Path = ASSET_DIR / "items" / "ending_burger.png"
     SCALE: float = 0.8
     GRAVITY: float = 2.5
 
