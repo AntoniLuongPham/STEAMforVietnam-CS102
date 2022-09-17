@@ -20,13 +20,13 @@ class Color:
     DEFAULT = (0, 0, 255)
     BLACK = (0, 0, 0)
     WHITE = (255, 255, 255)
-    LOADING_BAR = (255, 51, 153)
-    BOSS_HP_BAR = (255, 51, 153)
+    LOADING_BAR = (0, 255, 0)
+    BOSS_HP_BAR = (255, 0, 0)
     TEXT_DIALOGUE_SUBJECT = (19, 2, 150)
-    TEXT_DIALOGUE = (204, 115, 14)
-    TEXT_INVENTORY_CNT = (255, 255, 0)
-    TEXT_INTERNSHIP_REPORT = (242, 222, 179)
-    TEXT_CREDIT = (230, 147, 154)
+    TEXT_DIALOGUE = (0, 200, 0)
+    TEXT_INVENTORY_CNT = (200, 175, 0)
+    TEXT_INTERNSHIP_REPORT = (0, 0, 255)
+    TEXT_CREDIT = (0, 222, 175)
 
 
 class GameConfig:
@@ -137,7 +137,7 @@ class ShadowBossConfig:
     ANIMATION_INTERVAL_MS: int = 200
     SPEED: int = 8
     DAMAGE: int = 3
-    INITIAL_HP: int = 300
+    INITIAL_HP: int = 500
 
     ANGRY_INTERVAL_MS: int = 2000
     ANGRY_DURATION_MS: int = 2000
@@ -160,8 +160,8 @@ class ShadowBulletConfig:
 
 
 class EndingBurgerConfig:
-    SPRITE_PATH: Path = ASSET_DIR / "items" / "ending_burger.png"
-    SCALE: float = 0.8
+    SPRITE_PATH: Path = ASSET_DIR / "items" / "hamburger.png"
+    SCALE: float = 0.05
     GRAVITY: float = 2.5
 
     # the time between creation and deletion of entities of this type

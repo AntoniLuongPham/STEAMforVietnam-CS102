@@ -18,7 +18,7 @@ class Defeated(BaseScene):
         # TODO: clean up, move hardcoded values to configs
         util.display_text(
             self.screen,
-            text="You died!",
+            text="Oh no! You died!",
             x=200,
             y=200,
             font_size=32,
